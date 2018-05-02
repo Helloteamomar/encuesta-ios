@@ -5,13 +5,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 //import { TasksService } from '../providers/tasks-service/tasks-service';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { RegistroPage } from '../pages/registro/registro';
+import { EncuestaPage } from '../pages/encuesta/encuesta';
 import { SQLite } from '@ionic-native/sqlite';
 import { TasksServiceProvider } from '../providers/tasks-service/tasks-service';
+
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    RegistroPage,
+    EncuestaPage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +24,8 @@ import { TasksServiceProvider } from '../providers/tasks-service/tasks-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    RegistroPage,
+    EncuestaPage
   ],
   providers: [
     StatusBar,

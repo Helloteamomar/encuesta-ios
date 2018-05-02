@@ -11,18 +11,10 @@ import { SQLiteObject } from '@ionic-native/sqlite';
 @Injectable()
 export class TasksServiceProvider {
 
-  constructor(db: SQLiteObject) {
+  constructor(public db: SQLiteObject) {
 
   }
-  setDatabase(){
-    if(this.db === null){
-      this.db = db;
-    }
-  }
-  createTable(){
-  let sql = 'CREATE TABLE IF NOT EXISTS tasks(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, completed INTEGER)';
-  return this.db.executeSql(sql, []);
-   }
+
 
 
 

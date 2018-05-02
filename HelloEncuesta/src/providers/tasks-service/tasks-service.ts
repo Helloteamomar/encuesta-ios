@@ -14,7 +14,15 @@ export class TasksServiceProvider {
   constructor(public db: SQLiteObject) {
 
   }
-
+  setDatabase(db: SQLiteObject){
+    if(this.db === null){
+      this.db = db;
+    }
+  }
+  createTable(){
+  let sql = 'CREATE TABLE IF NOT EXISTS tasks(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, completed INTEGER)';
+  return this.db.executeSql(sql, []);
+   }
 
 
 

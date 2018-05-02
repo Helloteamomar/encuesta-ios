@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { EncuestaPage } from '../encuesta/encuesta';
 
 /**
- * Generated class for the RegistroPage page.
+ * Generated class for the Encuesta2Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,20 +10,16 @@ import { EncuestaPage } from '../encuesta/encuesta';
 
 @IonicPage()
 @Component({
-  selector: 'page-registro',
-  templateUrl: 'registro.html',
+  selector: 'page-encuesta2',
+  templateUrl: 'encuesta2.html',
 })
-export class RegistroPage {
+export class Encuesta2Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad RegistroPage');
-  }
-
-  pEncuesta(){
-    this.navCtrl.push(EncuestaPage);
+    console.log('ionViewDidLoad Encuesta2Page');
   }
 
 }

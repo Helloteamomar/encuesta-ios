@@ -1,3 +1,46 @@
 page-encuesta {
 
+  .txtTitle{
+    text-align: center;
+  }
+
+  .imgHeader{
+    width: 13%;
+    margin-right: 50%;
+  }
+
+  .colNavbar{
+    padding: 5%;
+  }
+
+  .btnSiguiente{
+      background-color: #FFC43D;
+      width: 50%;
+  }
+
+  .txtBox{
+    text-align: center;
+  }
+
+  .txtMarca{
+    color: #FFFFFF;
+    margin-left: 30%;
+  }
+
+  .txtHeader{
+    text-align: center;
+    font-weight: lighter,bold;
+    font-size: 30px;
+  }
+
+  .txtQuestions{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 25px;
+  }
+
+  .divButtons{
+    text-align: center;
+  }
+
 }

@@ -10,7 +10,6 @@ import { EncuestaPage } from '../pages/encuesta/encuesta';
 import { SQLite } from '@ionic-native/sqlite';
 import { TasksServiceProvider } from '../providers/tasks-service/tasks-service';
 
-
 @NgModule({
   declarations: [
     MyApp,
@@ -19,7 +18,7 @@ import { TasksServiceProvider } from '../providers/tasks-service/tasks-service';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -11,10 +11,10 @@ import { SQLiteObject } from '@ionic-native/sqlite';
 @Injectable()
 export class TasksServiceProvider {
 
-  constructor() {
+  constructor(db: SQLiteObject) {
 
   }
-  setDatabase(db: SQLiteObject){
+  setDatabase(){
     if(this.db === null){
       this.db = db;
     }

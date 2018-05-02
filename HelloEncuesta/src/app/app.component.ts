@@ -5,16 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SQLite } from '@ionic-native/sqlite';
 import { RegistroPage } from '../pages/registro/registro';
 import { EncuestaPage } from '../pages/encuesta/encuesta';
-
+import { TasksServiceProvider } from '../providers/tasks-service/tasks-service';
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = RegistroPage;
+  rootPage:any = EncuestaPage;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public sqlite:SQLite) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public sqlite:SQLite, public tasks: TasksServiceProvider) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -28,7 +28,8 @@ export class MyApp {
       location: 'default' // the location field is required
     })
     .then((db) => {
-      console.log(db);
+     this.tasks.setDatabase(db);
+     return this.tasks.createTable();
     })
     .catch(error =>{
       console.error(error);

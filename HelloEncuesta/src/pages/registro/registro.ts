@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { EncuestaPage } from '../encuesta/encuesta';
 
 /**
  * Generated class for the RegistroPage page.
@@ -20,6 +21,10 @@ export class RegistroPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistroPage');
+  }
+
+  pEncuesta(){
+    this.navCtrl.setRoot(EncuestaPage);
   }
 
 }

@@ -1,3 +1,31 @@
 page-registro {
 
+  .btnComenzar{
+    background-color: #FFC43D;
+    width: 50%;
+  }
+
+  .btnOmitir{
+    background-color: #D49F31;
+    width: 50%;
+  }
+
+  .divButtons{
+    text-align: center;
+  }
+
+  .txtMarca{
+    text-align: center;
+  }
+
+  .txtPrivacidad{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .imgHeader{
+    width: 20%;
+    display:block;
+    margin:auto;
+  }
 }
